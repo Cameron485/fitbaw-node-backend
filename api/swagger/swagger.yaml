@@ -32,6 +32,28 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+  /login:
+      x-swagger-router-controller: loginRoute
+      post:
+        description: login
+        operationId: login
+        parameters:
+          - name: login
+            in: body
+            description: login
+            required: true
+            schema:
+              $ref: "#/definitions/LoginBody"
+        responses:
+          "200":
+            description: Success
+            schema:
+              $ref: "#/definitions/HelloResponse"
+          # responses may fall through to errors
+          "403":
+            description: Error
+            schema:
+              $ref: "#/definitions/ErrorResponse"
 definitions:
   HelloResponse:
     required:
@@ -45,4 +67,14 @@ definitions:
     properties:
       message:
         type: string
+  LoginBody:
+    required:
+      - username
+      - password
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+
 
