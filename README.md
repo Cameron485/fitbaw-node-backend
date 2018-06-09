@@ -6,6 +6,7 @@ Fitbaw! is a react native app with the main goal of familiarising myself with re
 
 ## Technologies
 * Node.js
+* Swagger
 * Jest
 
 ## Databases

@@ -1,0 +1,43 @@
+{
+  "name": "fitbaw-node-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for Fitbaw! react native app",
+  "main": "app.js",
+  "engines": {
+    "node": "8.11.2",
+    "yarn": "1.7.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cameron485/fitbaw-node-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "arangodb"
+  ],
+  "author": "cameron.findlay84@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cameron485/fitbaw-node-backend/issues"
+  },
+  "homepage": "https://github.com/Cameron485/fitbaw-node-backend#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "jest": "^23.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "js-yaml": "^3.12.0",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-tools": "^0.10.3"
+  }
+}
